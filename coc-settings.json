@@ -1,0 +1,36 @@
+{
+  //Coc Specific
+  "diagnostic.checkCurrentLine": true,
+  "suggest.noselect": false,
+
+  //Python
+  "python.pythonPath": "python",
+  "python.venvPath": "~/venvs/",
+
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "~/venvs/black/bin/black",
+  "coc.preferences.formatOnSaveFiletypes": ["python", "json"],
+
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Path": "~/venvs/flake8/bin/flake8",
+
+  "pyright.organizeimports.provider": "isort",
+  "python.sortImports.path": "~/venvs/isort/bin/isort",
+
+  //Terraform
+  "languageserver": {
+    "terraform": {
+      "command": "terraform-ls",
+      "args": ["serve"],
+      "filetypes": ["terraform", "tf"],
+      "initializationOptions": {
+        "experimentalFeatures": {
+          "prefillRequiredFields": true
+        }
+      },
+      "settings": {}
+    }
+  }
+
+  //Snippets
+}

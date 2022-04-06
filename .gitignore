@@ -4,3 +4,4 @@
 # Except this file
 !init.vim
 !.gitignore
+!coc-settings.json
